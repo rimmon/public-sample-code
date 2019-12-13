@@ -1,0 +1,9 @@
+alias h="history 1000"
+
+export EDITOR=vi
+export PATH=/sbin:$PATH
+export LANG=
+export http_proxy=
+export https_proxy=
+export LANG=en_US.utf8
+export LC_ALL=en_US.utf8

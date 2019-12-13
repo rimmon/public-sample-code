@@ -1,0 +1,28 @@
+# .bash_profile
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+	. ~/.bashrc
+fi
+
+# User specific environment and startup programs
+
+PATH=$PATH:$HOME/bin
+
+export PATH
+
+#
+export LANG="en_US.UTF-8"
+
+# Oracle Settings
+
+export TMP=/tmp
+export TMPDIR=$TMP
+#
+export ORACLE_HOSTNAME=park.monster.tw
+export ORACLE_BASE=/u01/app/oracle
+export ORACLE_HOME=$ORACLE_BASE/product/11.2.0/db_1
+export ORACLE_SID=orcl
+export LD_LIBRARY_PATH=$ORACLE_HOME/lib:/lib:/usr/lib
+export CLASSPATH=$ORACLE_HOME/jlib:$ORACLE_HOME/rdbms/jlib
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:$ORACLE_HOME/bin:$PATH

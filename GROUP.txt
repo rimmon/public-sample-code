@@ -1,0 +1,2 @@
+admin: rimmon
+staff: user

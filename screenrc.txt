@@ -1,0 +1,18 @@
+screen -t ROOT  0  bash
+screen -t D1  1  bash
+screen -t D2  2  bash
+screen -t D3  3  bash
+screen -t D4  4  bash
+screen -t D5  5  bash
+screen -t D6  6  bash
+screen -t D7  7  bash
+screen -t D8  8  bash
+screen -t D9  9  bash
+
+select 1
+
+startup_message off
+defencoding utf8
+
+# MY CAPTION
+caption always "%H - (%n) %t %c"

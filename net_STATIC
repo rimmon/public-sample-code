@@ -1,0 +1,9 @@
+dns_domain_lo="monster.tw"
+
+config_eth0=( "172.30.0.49/23" )
+routes_eth0=( "default via 172.30.0.1")
+
+dns_domain_eth0="monster.tw"
+dns_servers_eth0="168.95.1.1"
+dns_search_eth0="monster.tw monster.com.tw"
+

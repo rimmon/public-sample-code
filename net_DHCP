@@ -1,0 +1,9 @@
+config_eth0=( "dhcp" )
+dhcp_eth0="nodns nosendhost"
+# mac_eth0="random-ending"
+dns_domain_lo="monster.tw"
+
+dns_domain_eth0="monster.tw"
+dns_servers_eth0="168.95.1.1"
+dns_search_eth0="monster.tw monster.com.tw"
+

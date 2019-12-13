@@ -1,0 +1,39 @@
+
+
+[global]
+   workgroup = workgroup
+   server string = %h server (Samba, Ubuntu)
+   dos charset = 950
+   dns proxy = no
+
+   encrypt passwords = true
+   passdb backend = tdbsam
+   obey pam restrictions = yes
+   unix password sync = yes
+   passwd program = /usr/bin/passwd %u
+   passwd chat = *Enter\snew\s*\spassword:* %n\n *Retype\snew\s*\spassword:* %n\n *password\supdated\ssuccessfully* .
+   pam password change = yes
+   map to guest = bad user
+
+   usershare allow guests = yes
+
+
+[homes]
+   comment = Home Directories
+   browseable = no
+   read only = no
+   directory mask = 0700
+
+
+[web]
+  comment = Web Testing Stage
+  path = /var/www
+  guest account = www-data
+  force user = www-data
+  force group = www-data
+  browseable = yes
+  public = yes
+  writable = yes
+  create mask = 0666
+  directory mask = 0777
+
